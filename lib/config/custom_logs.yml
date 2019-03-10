@@ -1,0 +1,10 @@
+# In this file, you need to declare the logs you want
+# Please refer to examples below
+#
+# Let's assume you want two custom logs, "ORDER_LOGGER", "ERROR_LOGGER"
+# and they log path for them should be "log/order.log" and "log/error.log"
+#
+# then, you should declare them like:
+#
+# - 'log/error.log'
+# - 'log/order.log'
