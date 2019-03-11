@@ -13,6 +13,11 @@ class CustomLogger < ActiveSupport::Logger
   end
 end
 
+def logger_from_path path
+  /\Alog\/(?<logger_name>.*)\.log\Z/ =~ path
+  "#{logger_name}_logger"
+end
+
 path_list = YAML.load_file("#{Rails.root}/config/custom_logs.yml")
 
 path_list.each do |log_path|
@@ -20,7 +25,3 @@ path_list.each do |log_path|
   eval("#{logger_name.upcase} = CustomLogger.new(log_path)")
 end
 
-def logger_from_path path
-  /\Alog\/(?<logger_name>.*)\.log\Z/ =~ path
-  "#{logger_name}_logger"
-end
