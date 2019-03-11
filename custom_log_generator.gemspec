@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hili@aligntech.com"]
 
   spec.summary       = %q{Create custom Rails logger}
-  spec.description   = %q{Sometimes we need to log some things on a different place other than the default logger place}
+  spec.description   = %q{Sometimes we need to log things on some different places other than the default logger place}
   spec.homepage      = "https://github.com/hiveer/custom_log_generator"
   spec.license       = "MIT"
 
