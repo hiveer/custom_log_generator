@@ -8,3 +8,8 @@
 #
 # - 'log/error.log'
 # - 'log/order.log'
+#
+# then, you can use the logger in your code like:
+#
+# ORDER_LOGGER.info "Hey, I will be recorded into order.log"
+# ERROR_LOGGER.info "Hi ORDER, I'm your brother, I will be recorded into error.log"
