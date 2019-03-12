@@ -4,7 +4,10 @@ class Railtie < Rails::Railtie
   end
 
   initializer "declare custome loggoer" do
-    class CustomLogger < ActiveSupport::Logger
+
+    puts "initialize Custom Logger"
+
+    class ::CustomLogger < ActiveSupport::Logger
       def initialize(*args)
         super(*args)
         @formatter = formatter
@@ -18,5 +21,6 @@ class Railtie < Rails::Railtie
         }
       end
     end
+
   end
 end
