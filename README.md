@@ -25,12 +25,12 @@ And then execute:
 After you finished the installation by bundle.
 You need to run:
 
-  $ rake custom_log:install
+    $ rake custom_log:install
 
 After doing this, you will get two file:
 
-"config/custom_logs.yml"
-"config/initializers/generate_custom_logger.rb"
+- config/custom_logs.yml
+- config/initializers/generate_custom_logger.rb
 
 Then, you need to declare the logs you want in the config file "custom_logs.yml"
 
